@@ -1,0 +1,14 @@
+{
+  "name": "istio-telepresence-sample",
+  "version": "1.0.0",
+  "main": "ratings.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ratings.js"
+  },
+  "dependencies": {
+    "httpdispatcher": "1.0.0",
+    "mongodb": "^2.2.31",
+    "mysql": "^2.15.0"
+  }
+}
