@@ -2,15 +2,19 @@
 A sample project using telepresence to develop istio micro-service locally
 
 ## WHY
-It's known to be difficult to set up environments for microservices. Usually, microservices are developed/deployed by different groups of people, keeping tracking and maintaining configurations, dependencies of those services can easily become impossible for individuals.
+It's known to be difficult to set up environments for microservices.
+
+Usually, microservices are developed/deployed by different groups of people, keeping tracking and maintaining configurations, dependencies of those services can easily become impossible for individuals.
 
 There're tools to help. For example, Helm for dependency management. However, it's still difficult to run tens or even hundreds of docker containers on everybody's laptop. Lots of teams maintain a universal dev cluster, for every programmer to work on. Then the problems of remote development kick in.
 
-I'm goona work you through a sample here: with the help of Telepresence and Istio, we can develop our services localy while taking advantadge of shared dev clusters
+I'm gona work you through a sample here: with the help of Telepresence and Istio, we can develop our services localy while taking advantadge of shared dev clusters
 
 Here're some ideas/tools for micro-service development on k8s https://kubernetes.io/blog/2018/05/01/developing-on-kubernetes/
 
 ## Before you begin
+I assume readers understand the basics of k8s, Istio, and have a working k8s cluster (including minikube, dockerForMac k8s), also, I'm using [https://istio.io/docs/examples/bookinfo/](Istio bookinfo application) as sample, so you need to know the services of this application
+
 I'm on MAC, using docker for mac and k8s integrated. Following steps should work on remote k8s or minidocker as well, if not, PR welcome.
 
 This is not a detailed installation guide for Istio and its bookinfo app. But if you're using dockerForMac too, it could be done fast with these reminders
